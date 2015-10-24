@@ -1,0 +1,47 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        }
+    },
+    "dependent_plugins": {}
+}

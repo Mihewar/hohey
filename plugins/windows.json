@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "hohey"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "hohey"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "hohey"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "hohey"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "hohey"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "hohey"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "hohey"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "hohey"
+        }
+    },
+    "dependent_plugins": {}
+}

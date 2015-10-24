@@ -1,0 +1,95 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"ios-package\" value=\"YoikScreenOrientation\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.hohey818558"
+        }
+    },
+    "dependent_plugins": {}
+}
