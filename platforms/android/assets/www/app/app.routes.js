@@ -52,6 +52,14 @@ function config($stateProvider, $urlRouterProvider) {
 				controller : 'profileCtrl',
 			}
 		}
+	}).state('parent.detail', {
+		url : '/detail/:uid',
+		views : {
+			'menuContent' : {
+				templateUrl : 'app/components/parent/detail.html',
+				controller : 'detailCtrl',
+			}
+		}
 	}).state('parent.setting', {
 		url : '/setting',
 		views : {

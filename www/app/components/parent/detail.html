@@ -1,0 +1,32 @@
+<ion-view view-title="Profile"> <ion-content>
+
+<div class="g-12 text-center" ng-controller="detailCtrl">
+	<div style="cursor: pointer;" class="g-6 center " ng-click="takepicture()">
+		<img id="myImage" style="max-width: 150px; margin-top: 50px" src="img/egg.png"
+			alt="egg" /> <span class="g-12 g-prnt bold">Change picture</span>
+	</div>
+</div>
+<div class="g-12">
+	<div class="content has-header">
+		<div class="list">
+			<label class="item item-input"> <span class="input-label">Name</span>
+				<input type="text">
+			</label> <label class="item item-input"> <span class="input-label">Birthdate</span>
+				<input type="date">
+			</label> <label class="item item-input item-select">
+				<div class="input-label">Gender</div> <select>
+					<option>choose gender</option>
+					<option>Female</option>
+					<option>Red</option>
+			</select>
+			</label>
+		</div>
+		<div class="padding">
+			<button class="button button-block button-calm">Save</button>
+		</div>
+	</div>
+</div>
+
+
+
+</ion-content> </ion-view>

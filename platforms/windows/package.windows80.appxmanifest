@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-    <Identity Name="com.ionicframework.hohey818558" Publisher="CN=$username$" Version="0.0.1.0" />
+    <Identity Name="hohey.mihewar.com" Publisher="CN=$username$" Version="0.0.1.0" />
     <Properties>
         <DisplayName>hohey</DisplayName>
-        <PublisherDisplayName>Ionic Framework Team</PublisherDisplayName>
+        <PublisherDisplayName>Mihewar</PublisherDisplayName>
         <Logo>images\storelogo.png</Logo>
     </Properties>
     <Prerequisites>
@@ -14,7 +14,7 @@
         <Resource Language="x-generate" />
     </Resources>
     <Applications>
-        <Application Id="com.ionicframework.hohey818558" StartPage="www/index.html">
+        <Application Id="hohey.mihewar.com" StartPage="www/index.html">
             <VisualElements BackgroundColor="#464646" Description="CordovaApp" DisplayName="hohey" ForegroundText="light" Logo="images\Square150x150Logo.png" SmallLogo="images\Square30x30Logo.png">
                 <DefaultTile ShowName="allLogos" WideLogo="images\Wide310x150Logo.png" />
                 <SplashScreen Image="images\splashscreen.png" />
@@ -23,5 +23,9 @@
     </Applications>
     <Capabilities>
         <Capability Name="internetClient" />
+        <Capability Name="picturesLibrary" />
+        <DeviceCapability Name="webcam" />
+        <Capability Name="musicLibrary" />
+        <DeviceCapability Name="microphone" />
     </Capabilities>
 </Package>

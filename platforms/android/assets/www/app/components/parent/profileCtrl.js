@@ -5,7 +5,7 @@ angular
     	document.addEventListener("deviceready", onDeviceReady, false);
     	function onDeviceReady() {
 
-    			screen.unlockOrientation();
+    			screen.lockOrientation('portrait');
 
     	}
     });

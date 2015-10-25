@@ -1,74 +1,94 @@
-<ion-view view-title="Setting">
-<ion-content>
+<ion-view view-title="Setting"> <ion-content>
 
 
 
-	<div class="card">
-		<div class="item item-divider">Sound</div>
-		<div class="g-12 g-prnt  item item-text-wrap">
-			<div class="g-12 g-prnt">
-				<div class="g-4 stn-lbl">Music</div>
-				<div class="g-8">
-					<div class="g-12 g-prnt item range">
-						<i class="icon ion-volume-low"></i> <input type="range"
-							name="volume"> <i class="icon ion-volume-high"></i>
-					</div>
+<div class="card">
+	<div class="item item-divider">Sound</div>
+	<div class="g-12 g-prnt  item item-text-wrap">
+		<div class="g-12 g-prnt">
+			<div class="g-4 stn-lbl">Music</div>
+			<div class="g-8">
+				<div class="g-12 g-prnt item range">
+					<i class="icon ion-volume-low"></i> <input type="range"
+						name="volume"> <i class="icon ion-volume-high"></i>
 				</div>
 			</div>
-			<div class="g-12 g-prnt">
-				<div class="g-4 stn-lbl">Voice</div>
-				<div class="g-8">
-					<div class="g-12 g-prnt item range range-positive">
-						<i class="icon ion-volume-low"></i> <input type="range"
-							name="volume" min="0" max="100" value="33"> <i
-							class="icon ion-volume-high"></i>
-					</div>
+		</div>
+		<div class="g-12 g-prnt">
+			<div class="g-4 stn-lbl">Voice</div>
+			<div class="g-8">
+				<div class="g-12 g-prnt item range range-positive">
+					<i class="icon ion-volume-low"></i> <input type="range"
+						name="volume" min="0" max="100" value="33"> <i
+						class="icon ion-volume-high"></i>
 				</div>
 			</div>
-			<div class="g-12 g-prnt">
-				<div class="g-4 stn-lbl">Sound</div>
-				<div class="g-8">
-					<div class="g-12 g-prnt item range range-positive">
-						<i class="icon ion-volume-low"></i> <input type="range"
-							name="volume" min="0" max="100" value="33"> <i
-							class="icon ion-volume-high"></i>
-					</div>
+		</div>
+		<div class="g-12 g-prnt">
+			<div class="g-4 stn-lbl">Sound</div>
+			<div class="g-8">
+				<div class="g-12 g-prnt item range range-positive">
+					<i class="icon ion-volume-low"></i> <input type="range"
+						name="volume" min="0" max="100" value="33"> <i
+						class="icon ion-volume-high"></i>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="card">
-		<div class="item item-divider">Vibration</div>
-		<div class="g-12 g-prnt  item item-text-wrap">
-			<div class="g-12 g-prnt">
-				<div class="g-4 stn-lbl">Vibration</div>
-				<div class="g-8">
-					<div class="g-12 g-prnt item range range-positive">
-						<i class="icon ion-ios-bolt-outline"></i> <input type="range"
-							name="volume" min="0" max="100" value="33"> <i
-							class="icon ion-ios-bolt"></i>
-					</div>
+</div>
+<div class="card">
+	<div class="item item-divider">Vibration</div>
+	<div class="g-12 g-prnt  item item-text-wrap">
+		<div class="g-12 g-prnt">
+			<div class="g-4 ">Vibration</div>
+			<div class="g-8">
+				<div class="g-12 g-prnt ">
+					<label class="toggle toggle-calm "> <input value="on"
+						type="checkbox">
+						<div class="track">
+							<div class="handle"></div>
+						</div>
+					</label>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="card">
-		<div class="item item-divider">Brightness</div>
-		<div class="g-12 g-prnt  item item-text-wrap">
-			<div class="g-12 g-prnt">
-				<div class="g-4 stn-lbl">Brightness</div>
-				<div class="g-8">
-					<div class="g-12 g-prnt item range range-positive">
-						<i class="icon ion-ios-sunny-outline"></i> <input type="range"
-							name="volume" min="0" max="100" value="33"> <i
-							class="icon ion-ios-sunny"></i>
-					</div>
+</div>
+<div class="card">
+	<div class="item item-divider">Brightness</div>
+	<div class="g-12 g-prnt  item item-text-wrap">
+		<div class="g-12 g-prnt">
+			<div class="g-4 stn-lbl">Brightness</div>
+			<div class="g-8">
+				<div class="g-12 g-prnt item range range-positive">
+					<i class="icon ion-ios-sunny-outline"></i> <input type="range"
+						name="volume" min="0" max="100" value="33"> <i
+						class="icon ion-ios-sunny"></i>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="card">
+	<div class="item item-divider">Timing</div>
+	<div class="g-12 g-prnt  item item-text-wrap">
+		<div class="g-12 g-prnt">
+			<label class="item item-input"> <span class="input-label">Play</span>
+				<input type="number">
+			</label>
+		</div>
+	</div>
+	<div class="g-12 g-prnt  item item-text-wrap">
+		<div class="g-12 g-prnt">
+			<label class="item item-input"> <span class="input-label">Rest</span>
+				<input type="number">
+			</label>
+		</div>
+	</div>
+</div>
 
+<div class="padding">
+			<button class="button button-block button-calm">Save</button>
+		</div>
 
-
-</ion-content>
- </ion-view>
+</ion-content> </ion-view>
