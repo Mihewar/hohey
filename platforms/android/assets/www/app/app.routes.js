@@ -12,9 +12,26 @@ function config($stateProvider, $urlRouterProvider) {
 		url : '/',
 		templateUrl : 'app/components/home/index.html',
 		controller : 'homeCtrl'
-	}).state('stage', {
-		url : '/stage',
-		templateUrl : 'app/components/stage/index.html',
+	})
+	.state('catagory', {
+		url : '/catagory',
+		templateUrl : 'app/components/stage/catagory.html',
+		controller : 'catagoryCtrl'
+	}).state('stage_1', {
+		url : '/stage_1',
+		templateUrl : 'app/components/stage/stage_1.html',
+		controller : 'stageCtrl'
+	}).state('stage_2', {
+		url : '/stage_2',
+		templateUrl : 'app/components/stage/stage_2.html',
+		controller : 'stageCtrl'
+	}).state('stage_3', {
+		url : '/stage_3',
+		templateUrl : 'app/components/stage/stage_3.html',
+		controller : 'stageCtrl'
+	}).state('stage_4', {
+		url : '/stage_4',
+		templateUrl : 'app/components/stage/stage_4.html',
 		controller : 'stageCtrl'
 	}).state('level', {
 		url : '/level/:l',

@@ -8,19 +8,7 @@ angular.module('app.core').controller('stageCtrl',
 
 			}
 
-			var myScroll;
 
-			function loaded() {
-				myScroll = new IScroll('#wrapper', {
-					eventPassthrough : true,
-					scrollX : true,
-					scrollY : false,
-					preventDefault : false,
-					bindToWrapper:true,
-				});
-
-			}
-			loaded();
 			$scope.letter = letterSrvc.getLetter();
 			//console.log(letter);
 		});

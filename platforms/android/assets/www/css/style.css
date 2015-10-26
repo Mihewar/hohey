@@ -24,13 +24,15 @@
 		);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd',
 		endColorstr='#05abe0', GradientType=1);
+	height: 100%;
 }
 
 .filimg img {
 	width: 100%;
+	height: 100%;
 }
 
-.hdr-cnt, .bdy-cnt, .ftr-cnt {
+.big-logo,.hdr-cnt, .bdy-cnt, .ftr-cnt {
 	position: absolute;
 	width: 100%;
 }
@@ -43,7 +45,7 @@
 }
 
 .bdy-cnt {
-	top: 40px;
+	top: 64px;
 	bottom: 40px;
 	left: 0px;
 	right: 0px
@@ -54,6 +56,11 @@
 	left: 0px;
 	padding-bottom: 10px;
 	text-align: center;
+}
+.big-logo{
+	top:10px;
+	text-align: center;
+
 }
 .bdy-cnt a{
 	display: block;
@@ -86,9 +93,13 @@
 }
 
 .ply-cnt {
-	line-height: 70px;
+
+	margin-top: 150px;
 }
 
+.btn-hvr:HOVER{
+	opacity:0.8;
+}
 .egg-cnt {
 	width: 50px;
 	height: 70px;
@@ -159,4 +170,15 @@
 	text-align: center;
 	margin: 0 20px;
 
+}
+.lvl-ltr{
+	position: absolute!important;
+	z-index: 1;
+	left: 0px;
+	right: 0px;
+	width: 50%!important;
+	margin: 30% auto auto;
+}
+.lvl-ltr:hover{
+	opacity:0.9
 }
