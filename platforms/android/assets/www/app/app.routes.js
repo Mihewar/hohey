@@ -34,13 +34,13 @@ function config($stateProvider, $urlRouterProvider) {
 		templateUrl : 'app/components/stage/stage_4.html',
 		controller : 'stageCtrl'
 	}).state('level', {
-		url : '/level/:l',
+		url : '/level/:s/:l',
 		templateUrl : 'app/components/stage/level.html',
 		controller : 'levelCtrl'
 	})
 
 	.state('listening', {
-		url : '/listening/:letter',
+		url : '/listening/:s/:l/:i',
 		templateUrl : 'app/components/stage/listening.html',
 		controller : 'listeningCtrl'
 	}).state('speaking', {

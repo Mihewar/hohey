@@ -3,7 +3,15 @@
 </div>
 
 <div class="hdr-cnt ">
-	<div class="g-6 text-left">
+	<div class="g-3 text-left">
+		<a style="display: inline-block;" href="#/catagory">
+			<img class="btn-hvr" style="cursor: pointer; width: 50px"
+				src="img/left.png" alt="exit" />
+		</a>
+
+	</div>
+	<div class="g-6"></div>
+	<div class="g-3 text-right">
 		<a style="display: inline-block;" href="#/catagory">
 			<img class="btn-hvr" style="cursor: pointer; width: 50px"
 				src="img/menu.png" alt="exit" />
@@ -12,16 +20,37 @@
 	</div>
 </div>
 <div class="bdy-cnt">
-<div class="g-8 g-prnt">
-	<div class="g-12 pdng-v-10 mrgn-v-10">
-		<span style="font-size: 50px">ሆሄ</span>
+	<div  class="g-8 g-prnt">
+		<div class="g-12 pdng-v-10 mrgn-v-10 ltr-cnt-bg" >
+			<span style="color:#0c0">{{letter}}</span>
+		</div>
+		<div class="g-12 text-center">
+			<div class="g-3">
+				<a href="#/listening/{{prev}}"><img class="btn-hvr" style="cursor: pointer; width: 50px"
+						src="img/left.png" alt="exit" /></a>
+			</div>
+			<div class="g-3">
+				<img ng-click="playletter()" class="btn-hvr" style="cursor: pointer; width: 50px"
+					src="img/replay.png" alt="exit" />
+			</div>
+			<div class="g-3">
+				<img class="btn-hvr" style="cursor: pointer; width: 50px"
+					src="img/rec.png" alt="exit" />
+			</div>
+			<div class="g-3">
+				<a href="#/listening/{{next}}"><img class="btn-hvr" style="cursor: pointer; width: 50px"
+						src="img/right.png" alt="exit" /></a>
+			</div>
+		</div>
 	</div>
-</div>
-<div class="g-4 g-prnt">
-	<div class="g-12"></div>
-	<div class="g-12">
-		<canvas id="phaser-example"></canvas>
+	<div class="g-4 g-prnt">
+		<div class="g-12"></div>
+		<div class="g-12">
+			<canvas id="phaser-example"></canvas>
 
+		</div>
 	</div>
 </div>
+<div class="kuku-hm">
+	<img style="width: 100%" src="img/kuku.png" alt="imge" />
 </div>

@@ -6,7 +6,7 @@
 //the 2nd parameter is an array of 'requires'
 angular.module('app', [ 'ionic', 'ngCordova','app.routes', 'app.core', 'app.services', 'app.config' ])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform,$rootScope) {
 	$ionicPlatform.ready(function() {
 		// Hide the accessory bar by default (remove this to show the accessory
 		// bar above the keyboard
@@ -18,6 +18,40 @@ angular.module('app', [ 'ionic', 'ngCordova','app.routes', 'app.core', 'app.serv
 			StatusBar.hide();
 		}
 	});
+	$rootScope.url='mp3/bg.mp3';
 
+	$rootScope.media=null;
+
+	$rootScope.load= function(){
+		var getMediaURL= function (s) {
+		    if(device.platform.toLowerCase() === "android") return "/android_asset/www/" + s;
+		    return s;
+		}
+		var mp3URL = getMediaURL($rootScope.url);
+
+		$rootScope.media = new Media(mp3URL, null, function (e) {
+		    alert('Media Error');
+		    alert(JSON.stringify(e));
+		});
+
+
+
+
+	}
+	$rootScope.play = function(){
+
+		if($rootScope.media){
+			$rootScope.media.play();
+			console.log('play');
+		}
+
+	}
+	$rootScope.stop = function (){
+		if($rootScope.media){
+			$rootScope.media.stop();
+		}
+	}
+
+	//$rootScope
 
 });

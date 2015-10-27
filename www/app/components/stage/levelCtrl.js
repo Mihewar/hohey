@@ -7,5 +7,8 @@ angular
 
     			screen.lockOrientation('landscape');
 
+
     	}
+
+    	$scope.stagelevel=$stateParams.s+'/'+$stateParams.l+'/0';
     });

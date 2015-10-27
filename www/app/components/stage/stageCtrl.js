@@ -9,6 +9,6 @@ angular.module('app.core').controller('stageCtrl',
 			}
 
 
-			$scope.letter = letterSrvc.getLetter();
+
 			//console.log(letter);
 		});

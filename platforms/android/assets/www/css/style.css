@@ -1,4 +1,15 @@
 /* Empty. Add your own CSS if you like */
+
+@font-face {
+	font-family: 'Ebrima';
+	src: url('Ebrima-Bold.eot');
+	src: url('Ebrima-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Ebrima-Bold.woff') format('woff'),
+		url('Ebrima-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 .dflt-bg {
 	height: 100%;
 }
@@ -56,6 +67,12 @@
 	left: 0px;
 	padding-bottom: 10px;
 	text-align: center;
+}
+.kuku-hm{
+	position: absolute;
+width: 250px;
+right: 10px;
+bottom: 69px;
 }
 .big-logo{
 	top:10px;
@@ -181,4 +198,12 @@
 }
 .lvl-ltr:hover{
 	opacity:0.9
+}
+.ltr-cnt-bg{
+	min-height: 400px;
+padding-left: 50px;
+font-family: Ebrima;
+font-size: 400px;
+line-height: 380px;
+text-align: center;
 }
