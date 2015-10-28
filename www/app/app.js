@@ -19,7 +19,9 @@ angular.module('app', [ 'ionic', 'ngCordova','app.routes', 'app.core', 'app.serv
 		}
 	});
 	$rootScope.url='mp3/bg.mp3';
+	$rootScope.isPlaying=false;
 
+	$rootScope.medias=[];
 	$rootScope.media=null;
 
 	$rootScope.load= function(){
@@ -28,16 +30,19 @@ angular.module('app', [ 'ionic', 'ngCordova','app.routes', 'app.core', 'app.serv
 		    return s;
 		}
 		var mp3URL = getMediaURL($rootScope.url);
+		
+		
 
 		$rootScope.media = new Media(mp3URL, null, function (e) {
-		    alert('Media Error');
-		    alert(JSON.stringify(e));
+		   // alert('Media Error');
+		   // alert(JSON.stringify(e));
 		});
+		$rootScope.medias.push($rootScope.media);
 
 
 
-
-	}
+	};
+	
 	$rootScope.play = function(){
 
 		if($rootScope.media){
@@ -45,12 +50,25 @@ angular.module('app', [ 'ionic', 'ngCordova','app.routes', 'app.core', 'app.serv
 			console.log('play');
 		}
 
-	}
+	};
+	$rootScope.stopAllSounds=function (){
+		for(var i=0;i < $rootScope.medias.length;i++){
+			$rootScope.medias[i].stop();
+		}
+	
+	};
+	
 	$rootScope.stop = function (){
 		if($rootScope.media){
 			$rootScope.media.stop();
+			$rootScope.media = null;
 		}
-	}
+	};
+	$rootScope.release = function (){
+		if($rootScope.media){
+			$rootScope.media.release();
+		}
+	};
 
 	//$rootScope
 

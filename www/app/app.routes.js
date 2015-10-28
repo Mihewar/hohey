@@ -48,11 +48,11 @@ function config($stateProvider, $urlRouterProvider) {
 		templateUrl : 'app/components/stage/speaking.html',
 		controller : 'speakingCtrl'
 	}).state('reading', {
-		url : '/reading/:letter',
+		url : '/reading/:s/:l/:i',
 		templateUrl : 'app/components/stage/reading.html',
 		controller : 'readingCtrl'
 	}).state('writing', {
-		url : '/writing/:letter',
+		url : '/writing/:s/:l/:i',
 		templateUrl : 'app/components/stage/writing.html',
 		controller : 'writingCtrl'
 	})

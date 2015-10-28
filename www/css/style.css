@@ -130,7 +130,7 @@ bottom: 69px;
 
 .lvl-btn a img {
 	position: relative;
-	width: 80%;
+	width: 90%;
 }
 
 .lvl-btn a span {
@@ -201,9 +201,16 @@ bottom: 69px;
 }
 .ltr-cnt-bg{
 	min-height: 400px;
-padding-left: 50px;
-font-family: Ebrima;
-font-size: 400px;
-line-height: 380px;
-text-align: center;
+	padding-left: 50px;
+	font-family: Ebrima;
+	font-size: 400px;
+	line-height: 380px;
+	text-align: center;
+	overflow:hidden;
 }
+canvas
+        {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
